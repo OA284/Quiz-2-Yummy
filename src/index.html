@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+    <link rel="shortcut icon" href="./imgs/logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/output.css">
+    <link rel="stylesheet" href="./css/input.css">
+</head>
+
+<body class="bg-black">
+
+    <section class="sideNav flex fixed">
+        <section class="sideNavInfo bg-[#0d0d0d] w-64 h-100vh p-7 flex flex-col justify-between">
+            <span>
+                <ul>
+                    <li class="text-white list-none pb-4 cursor-pointer" id="1">Search</li>
+                    <li class="text-white list-none pb-4 cursor-pointer" id="2">Categories</li>
+                    <li class="text-white list-none pb-4 cursor-pointer" id="3">Area</li>
+                    <li class="text-white list-none pb-4 cursor-pointer" id="4">Ingredients</li>
+                    <li class="text-white list-none cursor-pointer" id="5">Contact Us</li>
+                </ul>
+            </span>
+
+            <span>
+                <span>
+                    <a href="#"><i class="fa-brands fa-facebook text-white"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter text-white"></i></a>
+                    <a href="#"><i class="fa-solid fa-globe text-white"></i></a>
+                </span>
+                <h6 class="text-white">Copyright Â© 2019 All Rights Reserved.</h6>
+            </span>
+        </section>
+
+        <section class="sideNavPull w-16 h-100vh bg-white flex justify-center items-center">
+            <div class="container h-[90%] flex flex-col justify-between items-center">
+                <img src="./imgs/logo.png" alt="" class="w-[80%]">
+
+                <span class="flex flex-col">
+                    <i class="fa-solid fa-bars text-3xl block cursor-pointer"></i>
+                    <i class="fa-solid fa-xmark text-4xl hidden cursor-pointer"></i>
+                </span>
+
+                <span class="flex flex-col justify-center items-center gap-1">
+                    <a href="#"><i class="fa-solid fa-globe"></i></a>
+                    <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+                </span>
+            </div>
+        </section>
+    </section>
+
+    <section class="loadPage absolute left-0 right-0 top-0 bottom-0 justify-center items-center">
+        <i class="fa-solid fa-spinner fa-spin fa-7x text-white"></i>
+    </section>
+
+    <section class="foodImg w-[82%] h-full mx-auto my-10 block">
+        <div class="grid gap-7 lg:grid-cols-4 sm:grid-cols-1" id="demo">
+        </div>
+    </section>
+
+    <section class="foodDetails w-[82%] h-full mx-auto my-10 hidden" id="demo2">
+        
+    </section>
+
+    <section class="contactUs hidden">
+        <div class="flex flex-col justify-center items-center">
+            <div class="flex gap-7 justify-center items-center w-[60%] mx-auto mt-60">
+                <div class="partOne w-[50%] flex flex-col">
+                    <input type="text" class="one mb-6 p-2 rounded-md" placeholder="Enter Your Name">
+                    <input type="tel" class="Two mb-6 p-2 rounded-md" placeholder="Enter Your Phone">
+                    <input type="password" class="Three mb-6 p-2 rounded-md" placeholder="Enter Your Password">
+                </div>
+
+                <div class="partTwo w-[50%] flex flex-col">
+                    <input type="email" class="four mb-6 p-2 rounded-md" placeholder="Enter Your Email">
+                    <input type="number" maxlength="2" class="Five mb-6 p-2 rounded-md" placeholder="Enter Your Age">
+                    <input type="password" class="Six mb-6 p-2 rounded-md" placeholder="Repassword">
+                </div>
+            </div>
+            <button type="button" class="border border-[#942731] text-[#942731] px-2 py-1 rounded-md bg-transparent hover:bg-[#dc3545] hover:text-white">Submit</button>
+        </div>
+    </section>
+
+    <section class="Search hidden">
+        <div class="flex gap-7 justify-center items-center w-[70%] mx-auto mt-10">
+            <div class="partOne w-[50%] flex flex-col">
+                <input type="text" class="border border-white mb-6 p-2 rounded-md bg-[#0d0d0d] text-white" placeholder="Search By Name">
+            </div>
+
+            <div class="partTwo w-[50%] flex flex-col">
+                <input type="text" maxlength="1" class="border border-white mb-6 p-2 rounded-md bg-[#0d0d0d] text-white" placeholder="Search By First Letter">
+            </div>
+        </div>
+
+        <div class="searchfoodImg w-[82%] h-full mx-auto my-10">
+            <div class="grid gap-7 lg:grid-cols-4 sm:grid-cols-1" id="demo3">
+            </div>
+        </div>
+    </section>
+
+    <section class="cate w-[82%] h-full mx-auto my-10 hidden">
+        <div class="grid gap-7 lg:grid-cols-4 sm:grid-cols-1" id="demo4">
+        </div>
+    </section>
+
+    <section class="Area w-[82%] h-full mx-auto my-10 hidden">
+        <div class="grid gap-7 lg:grid-cols-4 sm:grid-cols-1" id="demo5">
+            
+        </div>
+    </section>
+
+    <section class="ingre w-[82%] h-full mx-auto my-10 hidden">
+        <div class="grid gap-7 lg:grid-cols-4 sm:grid-cols-1" id="demo6">
+            
+        </div>
+    </section>
+
+    <script src="./jquery-3.7.1.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

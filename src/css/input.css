@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer{
+    .sideNav{
+        top: 0;
+        left: -256px;
+        z-index: 999999999999999;
+    }
+    body{
+        overflow: hidden;
+    }
+    
+    .loadPage{
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, .3);
+        z-index: 9999999999999999;
+        display: flex;
+    }
+
+    img{
+        border-radius: 10px;
+    }
+}
+
+@layer{
+    @media (max-width: 1023px){
+        .cont span .child{
+            width: 500px;
+            height: 500px;
+        }
+    }
+    .cont .parent{
+        overflow: hidden;
+        font-size: 30px;
+        font-weight: 500;
+        position: absolute;
+    }
+    .cont span .child{
+        padding: 38% 0 0 5%;
+        width: 256px;
+        height: 256px;
+        background-color: rgba(255, 255, 255, .6);
+        transform: translateY(260px);
+        transition: all .5s;
+        z-index: -1;
+        border-radius: 10px;
+    }
+    .cont span:hover .child{
+        transform: translateY(0);
+    }
+}
+
+@layer{
+    .cont .parent{
+        overflow: hidden;
+        font-size: 30px;
+        font-weight: 500;
+        position: absolute;
+    }
+    .cont .parent .childCate{
+        width: 256px;
+        height: 160px;
+        background-color: rgba(255, 255, 255, .6);
+        text-align: center;
+        transform: translateY(260px);
+        transition: all .5s;
+        z-index: 99;
+        border-radius: 10px;
+    }
+    .cont .parent .childCate p{
+        font-size: 15px;
+        padding: 0 10px 10px;
+    }
+    .cont .parent:hover .childCate{
+        transform: translateY(0);
+    }
+}
